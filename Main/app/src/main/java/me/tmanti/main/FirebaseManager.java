@@ -1,6 +1,7 @@
 package me.tmanti.main;
 
 import android.support.annotation.NonNull;
+import android.util.Log;
 
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.Task;
@@ -57,8 +58,21 @@ public class FirebaseManager {
         });
     }
 
-    public Task<HashMap<String, Object>> getUserInfo(){
+    public Task<HashMap<String, Object>> getUserInfo(String uid){
+        getAuth();
+        Map<String, Object> data = new HashMap<>();
+        data.put("uid", uid);
+        return functions.getHttpsCallable("getUserInfo").call(data).continueWith(new Continuation<HttpsCallableResult, HashMap<String, Object>>() {
+            @Override
+            public HashMap<String, Object> then(@NonNull Task<HttpsCallableResult> task) throws Exception {
+                HashMap<String, Object> results = (HashMap<String, Object>) task.getResult().getData();
+                HashMap<String, Object> response = (HashMap<String, Object>) results.get("response");
 
+                Log.wtf("asd", task.getResult().getData().toString());
+
+                return response;
+            }
+        });
     }
 
     public Task<String> userExists(){
