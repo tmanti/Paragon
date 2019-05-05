@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "982297516050",
+    "firebase_url": "https://jamhacks3-inventory.firebaseio.com",
+    "project_id": "jamhacks3-inventory",
+    "storage_bucket": "jamhacks3-inventory.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982297516050:android:0b8c5e89df6c62e0",
+        "android_client_info": {
+          "package_name": "me.tmanti.main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982297516050-odk1u2j7k8eev6gmplgjliaho6ngo4h6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.tmanti.main",
+            "certificate_hash": "fb7bb13af4589f43da386f7bca31298f9f1b44e7"
+          }
+        },
+        {
+          "client_id": "982297516050-iuhs4rlhn4i0cvc1i288vgmbrh277170.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFoPNAKCQG8ZQTMiwbP3u6P_nUeuzbzZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982297516050-iuhs4rlhn4i0cvc1i288vgmbrh277170.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
